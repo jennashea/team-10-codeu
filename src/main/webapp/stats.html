@@ -3,7 +3,58 @@
 <head>
   <title>Stats</title>
   <link rel="stylesheet" href="/css/main.css">
+<style>
+#logo {
+   	position:absolute;
+    top:0px; 
+    left:10px;
+    width:90px;
+    height:88px;
+    overflow:hidden;
+	  
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: #233647;
+    text-align: right;
+    padding: 20px;
+}
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    padding-top: 1px;
+}
+nav li a{
+    color: white;
+    padding: 11px;
+    text-decoration: none;
+    font-family: arial;
+}
+nav li a:hover{
+    background-color: white;
+    color: #233647;
+}
+.column {
+  float: left;
+  width: 30%;
+  height: 160px;
+  margin: 10px;
+  padding-top: 15px;
+  padding: 10px;
+  border-radius: 25px;
+}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
   <script>
     // Fetch stats and display them in the page.
     function fetchStats(){
@@ -32,10 +83,65 @@
   </script>
 </head>
 <body onload="buildUI()">
+<nav>
+<ul>
+   <li>
+<img src="Images/PawsomePlease.png" id="logo"></li>
+
+<li>
+	<li><a href="index.html">HOME</a></li>
+    <li><a href="aboutus.html">ABOUT US</a></li>
+    <li><a href="chart.html">CHARTS</a></li>
+    <li><a href="feed.html">PUBLIC FEED</a></li>
+    <li><a href="maps.html">MAPS</a></li>
+    <li><a href="stats.html">STATS</a></li>
+    <li><a href="user-page.html">GALLERY</a></li>
+    <li><a href="Login.html">LOGIN</a></li>
+</ul>
+</nav> 
 <div id="content">
-  <h1>Site Statistics</h1>
+  <h1>Animal Statistics</h1>
   <hr/>
-  <div id="stats-container">Loading...</div>
+  <br/><br/>
+  <div class="row">
+    <div class="column"
+    style="background-color:#B6C6D6;text-align:center">
+    <br/><br/>
+    <h2>7.6 million companion animals enter shelters each year</h2></div>
+    <div class="column" style="background-color:#D9E7E9;text-align:center">
+    <br/><br/>
+    <h2>53% of the adoptable pets in North America are dogs</h2></div>
+    <div class="column" style="background-color:#F8EEE7;text-align:center">
+    <br/><br/>
+    <h2>60% of all households in the U.S. have at least one pet</h2></div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="column"
+    style="background-color:#F0DDDA;text-align:center">
+    <br/><br/>
+    <h2>2.1 million pets are insured</h2></div>
+    <div class="column" style="background-color:#F5F0CE;text-align:center">
+    <br/><br/>
+    <h2>$69.5 billion estimated amount spent annually on pets in the U.S.</h2></div>
+    <div class="column" style="background-color:#BAC3CC;text-align:center">
+    <br/><br/>
+    <h2>A dog's sense of smell is 10,000 times stronger than a human's</h2></div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="column"
+    style="background-color:#D9E7E9;text-align:center">
+    <br/><br/>
+    <h2>Average lifespan of a dog is 10-13 years</h2></div>
+    <div class="column" style="background-color:#B6E6F0;text-align:center">
+    <br/><br/>
+    <h2>There are more than 77.8 million pet dogs and 85.8 million pet cats in
+    the U.S.</h2></div>
+    <div class="column" style="background-color:#F2EEE1;text-align:center">
+    <br/><br/>
+    <h2>3.1 of U.S. households owned birds</h2></div>
+  </div>
 </div>
 </body>
 </html>
